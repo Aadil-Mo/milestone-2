@@ -1,0 +1,131 @@
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    color: #333;
+    line-height: 1.6;
+}
+
+#navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 280px; /* Adjusted width */
+    height: 100%;
+    background-color: #f8f8f8;
+    border-right: 1px solid #ccc;
+    padding: 20px;
+    overflow-y: auto;
+}
+
+#navbar header {
+    font-size: 2em; /* Slightly larger header */
+    font-weight: bold;
+    padding-bottom: 15px;
+    margin-bottom: 25px;
+    border-bottom: 1px solid #eee;
+    text-align: center; /* Center the header */
+}
+
+#navbar ul {
+    list-style: none;
+    padding-left: 0;
+}
+
+#navbar li {
+    padding: 0;
+}
+
+.nav-link {
+    display: block;
+    padding: 12px 15px; /* Adjusted padding */
+    text-decoration: none;
+    color: #444;
+    border-bottom: 1px solid #eee;
+    transition: background-color 0.3s ease; /* Smooth hover effect */
+}
+
+.nav-link:hover {
+    background-color: #eee;
+}
+
+#main-doc {
+    margin-left: 300px; /* Adjusted margin for navbar width */
+    padding: 30px; /* Adjusted padding */
+}
+
+.main-section {
+    margin-bottom: 50px; /* Increased margin */
+}
+
+.main-section header {
+    font-size: 1.8em; /* Slightly larger header */
+    font-weight: bold;
+    padding-bottom: 12px;
+    border-bottom: 2px solid #ddd; /* Thicker border */
+    margin-bottom: 20px;
+}
+
+p {
+    margin-bottom: 20px; /* Increased margin */
+}
+
+code {
+    display: block;
+    background-color: #f0f0f0;
+    padding: 18px; /* Adjusted padding */
+    border-radius: 5px;
+    margin-bottom: 20px; /* Increased margin */
+    white-space: pre-wrap;
+    font-family: 'Courier New', monospace; /* Monospace font */
+    font-size: 0.95em;
+    line-height: 1.5;
+}
+
+ul, ol {
+    padding-left: 25px; /* Increased padding */
+    margin-bottom: 20px; /* Increased margin */
+}
+
+li {
+    margin-bottom: 10px; /* Increased margin */
+}
+
+a {
+    color: #007bff; /* Link color */
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* Media Query for responsiveness */
+@media (max-width: 768px) {
+    body {
+        display: block; /* Stack navbar and main content */
+    }
+
+    #navbar {
+        position: static;
+        width: 100%;
+        height: auto;
+        border-bottom: 1px solid #ccc;
+        margin-bottom: 20px;
+        padding: 10px;
+    }
+
+    #main-doc {
+        margin-left: 0;
+        padding: 10px;
+    }
+
+    #navbar ul {
+        border-top: 1px solid #eee;
+    }
+
+    .nav-link {
+        border-bottom: none;
+    }
+}
