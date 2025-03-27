@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Python Getting Started Documentation</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <nav id="navbar">
+        <header>Python Getting Started</header>
+        <ul>
+            <li><a class="nav-link" href="#Introduction">Introduction</a></li>
+            <li><a class="nav-link" href="#Installation">Installation</a></li>
+            <li><a class="nav-link" href="#Basic_Syntax">Basic Syntax</a></li>
+            <li><a class="nav-link" href="#Variables_and_Data_Types">Variables and Data Types</a></li>
+            <li><a class="nav-link" href="#Operators">Operators</a></li>
+            <li><a class="nav-link" href="#Control_Flow">Control Flow</a></li>
+            <li><a class="nav-link" href="#Functions">Functions</a></li>
+            <li><a class="nav-link" href="#Common_Libraries">Common Libraries</a></li>
+            <li><a class="nav-link" href="#Further_Learning">Further Learning</a></li>
+        </ul>
+    </nav>
+    <main id="main-doc">
+        <section class="main-section" id="Introduction">
+            <header>Introduction</header>
+            <p>Python is an interpreted, high-level, general-purpose programming language. Created by Guido van Rossum and first released in 1991, Python's design philosophy emphasizes code readability with its notable use of significant indentation.</p>
+            <p>This documentation will guide you through the basics of getting started with Python.</p>
+        </section>
+
+        <section class="main-section" id="Installation">
+            <header>Installation</header>
+            <p>Before you can start writing Python code, you need to have Python installed on your system.</p>
+            <p>You can download the latest version of Python from the official Python website: <a href="https://www.python.org/downloads/" target="_blank">python.org/downloads/</a></p>
+            <p>Follow the installation instructions for your specific operating system (Windows, macOS, Linux).</p>
+            <p>It's recommended to install pip, the package installer for Python, during the installation process.</p>
+        </section>
+
+        <section class="main-section" id="Basic_Syntax">
+            <header>Basic Syntax</header>
+            <p>Python syntax is known for its readability. Here are some fundamental syntax rules:</p>
+            <ul>
+                <li>Indentation is crucial in Python. It's used to define code blocks.</li>
+                <li>Comments are used to explain code. Single-line comments start with a hash symbol (#).</li>
+                <li>Python is case-sensitive.</li>
+            </ul>
+            <p>Example:</p>
+            <pre><code># This is a comment
+print("Hello, Python!")
+
+if 5 > 2:
+    print("Five is greater than two!")
+</code></pre>
+        </section>
+
+        <section class="main-section" id="Variables_and_Data_Types">
+            <header>Variables and Data Types</header>
+            <p>Variables are used to store data. In Python, you don't need to explicitly declare the data type of a variable.</p>
+            <p>Common data types in Python include:</p>
+            <ul>
+                <li>Integers (e.g., 10, -5)</li>
+                <li>Floats (e.g., 3.14, 2.5)</li>
+                <li>Strings (e.g., "Hello", 'World')</li>
+                <li>Booleans (e.g., True, False)</li>
+                <li>Lists (e.g., [1, 2, 3])</li>
+                <li>Tuples (e.g., (1, 2, 3))</li>
+                <li>Dictionaries (e.g., {"name": "Alice", "age": 30})</li>
+            </ul>
+            <p>Example:</p>
+            <pre><code>name = "Bob"
+age = 25
+is_student = True
+grades = [85, 90, 92]
+</code></pre>
+        </section>
+
+        <section class="main-section" id="Operators">
+            <header>Operators</header>
+            <p>Python supports various operators to perform operations on values and variables.</p>
+            <p>Common operators include:</p>
+            <ul>
+                <li>Arithmetic operators (+, -, *, /, %, **)</li>
+                <li>Comparison operators (==, !=, >, <, >=, <=)</li>
+                <li>Logical operators (and, or, not)</li>
+                <li>Assignment operators (=, +=, -=, etc.)</li>
+            </ul>
+            <p>Example:</p>
+            <pre><code>x = 10
+y = 3
+sum_result = x + y
+greater_than = x > y
+logical_and = x > 5 and y < 5
+</code></pre>
+        </section>
+
+        <section class="main-section" id="Control_Flow">
+            <header>Control Flow</header>
+            <p>Control flow statements determine the order in which code is executed.</p>
+            <p>Key control flow statements in Python are:</p>
+            <ul>
+                <li><code>if</code>, <code>elif</code>, <code>else</code> statements for conditional execution.</li>
+                <li><code>for</code> loops for iterating over sequences.</li>
+                <li><code>while</code> loops for repeating a block of code as long as a condition is true.</li>
+            </ul>
+            <p>Example:</p>
+            <pre><code>age = 18
+if age >= 18:
+    print("You are an adult.")
+else:
+    print("You are a minor.")
+
+for i in range(5):
+    print(i)
+
+count = 0
+while count < 3:
+    print(count)
+    count += 1
+</code></pre>
+        </section>
+
+        <section class="main-section" id="Functions">
+            <header>Functions</header>
+            <p>Functions are blocks of reusable code that perform a specific task. You can define your own functions or use built-in functions.</p>
+            <p>Functions are defined using the <code>def</code> keyword.</p>
+            <p>Example:</p>
+            <pre><code>def greet(name):
+    print(f"Hello, {name}!")
+
+greet("Alice")
+
+def add(a, b):
+    return a + b
+
+result = add(5, 2)
+print(result)
+</code></pre>
+        </section>
+
+        <section class="main-section" id="Common_Libraries">
+            <header>Common Libraries</header>
+            <p>Python has a vast ecosystem of libraries that extend its functionality. Here are a few common ones:</p>
+            <ul>
+                <li><code>NumPy</code>: For numerical computations.</li>
+                <li><code>Pandas</code>: For data manipulation and analysis.</li>
+                <li><code>Matplotlib</code>: For creating visualizations.</li>
+                <li><code>Requests</code>: For making HTTP requests.</li>
+                <li><code>Django</code> and <code>Flask</code>: For web development.</li>
+            </ul>
+            <p>You can install libraries using pip:</p>
+            <pre><code>pip install numpy</code></pre>
+        </section>
+
+        <section class="main-section" id="Further_Learning">
+            <header>Further Learning</header>
+            <p>This documentation provides a basic introduction to getting started with Python. To learn more, consider exploring the following resources:</p>
+            <ul>
+                <li>The official Python documentation: <a href="https://docs.python.org/3/" target="_blank">docs.python.org/3/</a></li>
+                <li>Online courses on platforms like Coursera, edX, and Udemy.</li>
+                <li>Interactive Python tutorials and exercises.</li>
+            </ul>
+        </section>
+    </main>
+</body>
+</html>
